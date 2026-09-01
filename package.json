@@ -2,9 +2,9 @@
   "name": "astromatic",
   "version": "0.0.0",
   "author": "Dewa Widyakumara <widyakumara@gmail.com>",
-  "private": true,
-  "license": "UNLICENSED",
   "type": "module",
+  "license": "UNLICENSED",
+  "private": true,
   "allowScripts": {
     "esbuild": true
   },
@@ -12,9 +12,17 @@
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "types": "wrangler types",
+    "serve": "wrangler dev"
   },
   "dependencies": {
-    "astro": "^7.2.10"
+    "@astrojs/cloudflare": "^14.2.5",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/bun": "^1.4.0",
+    "astro": "^7.2.10",
+    "remove": "^0.1.5",
+    "tailwindcss": "^4.3.3",
+    "wrangler": "^4.127.1"
   }
 }

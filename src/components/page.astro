@@ -1,0 +1,31 @@
+---
+import "../styles/index.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<title>astromatic: for the people</title>
+	</head>
+	<body>
+    <div id="head">
+      <div class="wrap">
+        <h1><a href="/">astromatic</a></h1>
+        <p>for the people</p>
+      </div>
+    </div>
+    <div id="body">
+      <div class="wrap">
+        <slot/>
+      </div>
+    </div>
+    <div id="foot">
+      <div class="wrap">
+        <p><a href="/">astromatic</a>: <span>for the people</span></p>
+      </div>
+    </div>
+	</body>
+</html>

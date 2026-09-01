@@ -1,23 +1,31 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 
+import cloudflare from "@astrojs/cloudflare";
+
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 9999,
     allowedHosts: ["demo.widyakumara.com"],
   },
+
   devToolbar: {
     enabled: false,
   },
+
   outDir: "./.dist",
+
   build: {
     inlineStylesheets: "never",
     format: "file",
     assets: "inc",
   },
+
   vite: {
-    plugins: [],
+    plugins: [tailwindcss()],
     esbuild: { legalComments: "none" },
     build: {
       emptyOutDir: true,
@@ -31,4 +39,6 @@ export default defineConfig({
       },
     },
   },
+
+  adapter: cloudflare(),
 });

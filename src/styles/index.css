@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  @apply font-mono;
+}
+
+body {
+  @apply h-dvh flex flex-col;
+  @apply text-stone-800 bg-stone-400;
+}
+
+.wrap {
+  @apply mx-auto w-8/12 flex items-center justify-between py-4;
+}
+
+#head {
+  .wrap {
+    @apply border-b;
+  }
+  h1 {
+    @apply font-bold;
+  }
+}
+
+#foot {
+  .wrap {
+    @apply border-t;
+  }
+  a {
+    @apply font-bold;
+  }
+}
+
+#body {
+  @apply flex-1;
+}
