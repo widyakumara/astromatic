@@ -21,7 +21,6 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "^1.4.0",
     "astro": "^7.2.10",
-    "remove": "^0.1.5",
     "tailwindcss": "^4.3.3",
     "wrangler": "^4.127.1"
   }
