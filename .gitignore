@@ -1,5 +1,5 @@
 .astro/
 .dist/
+.wrangler/
 node_modules/
-*.mp4
 .DS_Store
