@@ -9,6 +9,7 @@ minimumReleaseAge = 172800
 minimumReleaseAgeExcludes = [
   "@astrojs/telemetry",
   "@astrojs/markdown-satteri",
+  "@astrojs/internal-helpers",
   "@types/bun",
   "@types/node",
   "astro",
