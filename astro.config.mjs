@@ -1,9 +1,7 @@
 // @ts-check
-import { defineConfig } from "astro/config";
-
 import cloudflare from "@astrojs/cloudflare";
-
 import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
   server: {
@@ -11,19 +9,16 @@ export default defineConfig({
     port: 9999,
     allowedHosts: ["demo.widyakumara.com"],
   },
-
   devToolbar: {
     enabled: false,
   },
-
   outDir: "./.dist",
-
+  adapter: cloudflare(),
   build: {
     inlineStylesheets: "never",
     format: "file",
     assets: "inc",
   },
-
   vite: {
     plugins: [tailwindcss()],
     esbuild: { legalComments: "none" },
@@ -39,6 +34,4 @@ export default defineConfig({
       },
     },
   },
-
-  adapter: cloudflare(),
 });
