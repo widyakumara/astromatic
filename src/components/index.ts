@@ -1,3 +1,4 @@
+import ContactForm from "./contact.form.astro";
 import Page from "./page.astro";
 
-export { Page };
+export { ContactForm, Page };

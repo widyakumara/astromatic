@@ -33,4 +33,7 @@ body {
 
 #body {
   @apply flex-1;
+  .wrap {
+    @apply h-full flex-col items-stretch justify-normal;
+  }
 }
