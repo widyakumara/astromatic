@@ -1,20 +1,20 @@
 {
   "name": "astromatic",
+  "version": "0.0.0",
+  "author": "Dewa Widyakumara <widyakumara@gmail.com>",
+  "private": true,
+  "license": "UNLICENSED",
   "type": "module",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
+  "allowScripts": {
+    "esbuild": true
   },
   "scripts": {
-    "dev": "astro dev",
+    "astro": "astro",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "astro dev",
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "^7.2.10"
-  },
-  "allowScripts": {
-    "esbuild": true
   }
 }
