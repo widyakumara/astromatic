@@ -2,6 +2,7 @@
 
 ---
 
-<div class="contact failed">
-  <pre>contact failed</pre>
+<div x-show="status === 'failed'">
+  <h2>Something went wrong</h2>
+  <p x-text="message"></p>
 </div>

@@ -2,29 +2,12 @@
 
 ---
 
-<!-- Wrap the component elements in our custom element “astro-heart”. -->
-<astro-heart>
-  <button aria-label="Heart">💜</button> × <span>0</span>
-</astro-heart>
-
-<script>
-  // Define the behavior for our new type of HTML element.
-  class AstroHeart extends HTMLElement {
-    connectedCallback() {
-      let count = 0;
-
-      const heartButton = this.querySelector("button");
-      const countSpan = this.querySelector("span");
-
-      // Each time the button is clicked, update the count.
-      if (heartButton && countSpan) {
-        heartButton.addEventListener("click", () => {
-          count++;
-          countSpan.textContent = count.toString();
-        });
-      }
-    }
-  }
-
-  customElements.define("astro-heart", AstroHeart);
-</script>
+<form @submit.prevent="submit">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required />
+  <label for="mail">Email</label>
+  <input type="email" id="mail" name="mail" required />
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+  <button type="submit">Send</button>
+</form>

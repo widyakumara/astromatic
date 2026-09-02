@@ -1,4 +1,5 @@
 // @ts-check
+import alpinejs from "@astrojs/alpinejs";
 import cloudflare from "@astrojs/cloudflare";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
@@ -14,6 +15,7 @@ export default defineConfig({
   },
   outDir: "./.dist",
   adapter: cloudflare(),
+  integrations: [alpinejs({ entrypoint: "/src/clients/alpine.ts" })],
   build: {
     inlineStylesheets: "never",
     format: "file",

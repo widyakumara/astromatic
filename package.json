@@ -19,14 +19,17 @@
     "serve": "wrangler dev"
   },
   "dependencies": {
+    "@astrojs/alpinejs": "^1.0.0",
     "@astrojs/cloudflare": "^14.2.5",
     "@tailwindcss/vite": "^4.3.3",
+    "alpinejs": "^3.17.1",
     "astro": "^7.2.10",
     "tailwindcss": "^4.3.3",
     "wrangler": "^4.127.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/alpinejs": "^3.13.11",
     "@types/bun": "^1.4.0",
     "@typescript-eslint/parser": "^8.68.0",
     "eslint": "^10.9.1",

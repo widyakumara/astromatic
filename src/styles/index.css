@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  @apply leading-none;
+}
+
 :root {
   @apply font-mono;
 }
@@ -35,5 +39,31 @@ body {
   @apply flex-1;
   .wrap {
     @apply h-full flex-col items-stretch justify-normal;
+  }
+}
+
+hr {
+  @apply my-4;
+}
+
+#contact {
+  h1 {
+    @apply font-bold mb-4;
+  }
+  form {
+    @apply grid gap-4;
+    grid-template-columns: auto 1fr;
+  }
+  input,
+  textarea {
+    @apply border border-stone-500;
+  }
+  input {
+    @apply p-1;
+  }
+  button {
+    @apply border border-stone-500 px-2 py-1;
+    @apply justify-self-start;
+    grid-column: 2;
   }
 }

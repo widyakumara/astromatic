@@ -5,8 +5,8 @@
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.organizeImports": "explicit"
+    "source.fixAll": "never",
+    "source.organizeImports": "never"
   },
   "editor.quickSuggestions": {
     "strings": true
